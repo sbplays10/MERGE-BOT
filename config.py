@@ -8,9 +8,9 @@ class Config(object):
     OWNER = os.environ.get("OWNER")
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME")
     PASSWORD = os.environ.get("PASSWORD")
-    DATABASE_URL = os.environ.get("DATABASE_URL")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://merge1:merge1@cluster0.s9ze9.mongodb.net/?retryWrites=true&w=majority")
     LOGCHANNEL = os.environ.get("LOGCHANNEL")  # Add channel id as -100 + Actual ID
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
     USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", None)
-    IS_PREMIUM = False
+    IS_PREMIUM = True
     MODES = ["video-video", "video-audio", "video-subtitle", "extract-streams"]
